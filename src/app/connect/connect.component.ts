@@ -96,4 +96,17 @@ export class ConnectComponent implements OnInit {
       this.filteredUsers = temp;
     });
   }
+
+
+  public onConnect(name: string): void {
+    window.alert('You have connected with ' + name);
+  }
+
+public openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+public closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
 }

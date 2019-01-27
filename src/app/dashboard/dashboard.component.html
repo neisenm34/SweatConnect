@@ -1,0 +1,37 @@
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+</head>
+
+<body>
+<div class="pure-g">
+</div>
+
+<button class="open-button pure-button-primary" (click)="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <h1>Chat</h1>
+  <h2>Chat Messages</h2>
+  <div class="user">
+    <img src="https://ui-avatars.com/api/?name=John+Doe&size=75&rounded=true" alt="user1-avatar">
+    <p>Hello there! Are we still meeting at gym today?</p>
+    <span class="time-right">11:00</span>
+  </div>
+  <div class="user darker">
+    <img src="https://ui-avatars.com/api/?name=John+Doe&size=75&rounded=true" alt="user1-avatar">
+    <p>Yep, see you there!</p>
+    <span class="time-left">11:03</span>
+  </div>
+  <div class="user darker">
+    <img src="https://ui-avatars.com/api/?name=John+Doe&size=75&rounded=true" alt="user1-avatar">
+    <p>Hey, starting in a min!</p>
+    <span class="time-left">17:34</span>
+  </div>
+
+  <textarea placeholder="Type new message here.." name="msg" required></textarea>
+
+  <button type="submit" class="pure-button">Send</button>
+  <button type="button" class="pure-button cancel" (click)="closeForm()">Close</button>
+</div>
+
+</body>

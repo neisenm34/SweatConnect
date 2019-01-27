@@ -8,14 +8,15 @@
     <div class="pure-u-1 pure-u-md-1-3">
       <div class="card">
         <div class="container">
-          <img src="https://ui-avatars.com/api/?name=Jane+Doe&size=175&rounded=true">
+          <h3>About Me</h3>
+          <img src="https://ui-avatars.com/api/?name=Jane+Doe&size=150&rounded=true">
           <h4>Name:</h4><p>Jane Doe</p>
           <h4>Bio:</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius sed ex luctus ornare. Praesent elementum tortor quis nisl sollicitudin vulputate a sit amet mauris. Mauris consequat, arcu gravida mollis blandit, mi eros faucibus magna, quis convallis dui risus eu tellus. In mauris risus, gravida a eros nec, lobortis bibendum arcu. Praesent dapibus ornare tincidunt. Vivamus tincidunt, urna vitae cursus placerat, lectus est viverra mi, vitae faucibus nisl justo vitae ex. Praesent aliquam mi turpis.</p>
           <h4>Location:</h4><p>Saint Paul, MN</p>
           <h4>Fitness Interests:</h4><p>Cardio, Cycling, HIIT, Strength Training, TRX</p>
           <h4>Fitness Goals:</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius sed ex luctus ornare. Praesent elementum tortor quis nisl sollicitudin vulputate a sit amet mauris.</p>
           <br>
-          <button class="pure-button" (click)="onFindFriends()">Find Friends</button>
+          <button class="pure-button pure-button-primary" (click)="onFindFriends()">Find Friends</button>
         </div>
       </div>
     </div>
@@ -23,10 +24,70 @@
     <div class="pure-u-1 pure-u-md-2-3">
       <div class="card">
         <div class="container">
-          <h3>Badges | Accomplishments</h3>
+          <h3>Badges</h3>
+          <p class="center-content">
+            You don't have any badges yet.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <h3>Connections</h3>
+          <div *ngFor="let user of users" class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
+            <div class="card center-content">
+              <div class="container">
+                <img src="https://ui-avatars.com/api/?name=John+Doe&size=120&rounded=true">
+                <h2>{{user.name}}</h2>
+
+                <h4>Gym Memberships</h4>
+                <p *ngFor="let membership of user.memberships">
+                  {{membership}}
+                </p>
+
+                <h4>Preferred Activities</h4>
+                <p *ngFor="let activity of user.preferred_workouts">
+                  {{activity}}
+                </p>
+
+                <h4>Preferred Workout Times</h4>
+                <p *ngFor="let time of user.preferred_times">
+                  {{time}}
+                </p>
+
+                <button class="pure-button button-margin pure-button-primary" (click)="openForm()">Message</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
+
+  <button class="open-button pure-button-primary" (click)="openForm()">Chat</button>
+
+  <div class="chat-popup" id="myForm">
+      <h1>Chat</h1>
+      <h2>Chat Messages</h2>
+      <div class="user">
+        <img src="https://ui-avatars.com/api/?name=John+Doe&size=75&rounded=true" alt="user1-avatar">
+        <p>Hello there! Are we still meeting at gym today?</p>
+        <span class="time-right">11:00</span>
+      </div>
+      <div class="user darker">
+        <img src="https://ui-avatars.com/api/?name=John+Doe&size=75&rounded=true" alt="user1-avatar">
+        <p>Yep, see you there!</p>
+        <span class="time-left">11:03</span>
+      </div>
+      <div class="user darker">
+        <img src="https://ui-avatars.com/api/?name=John+Doe&size=75&rounded=true" alt="user1-avatar">
+        <p>Hey, starting in a min!</p>
+        <span class="time-left">17:34</span>
+      </div>
+
+      <textarea placeholder="Type new message here.." name="msg" required></textarea>
+
+      <button type="submit" class="pure-button">Send</button>
+      <button type="button" class="pure-button cancel" (click)="closeForm()">Close</button>
+  </div>
+
 </body>

@@ -53,22 +53,51 @@
             <h2>{{user.name}}</h2>
 
             <h4>Gym Memberships</h4>
-            <div *ngFor="let membership of user.memberships">
+            <p *ngFor="let membership of user.memberships">
               {{membership}}
-            </div>
+            </p>
 
             <h4>Preferred Activities</h4>
-            <div *ngFor="let activity of user.preferred_workouts">
+            <p *ngFor="let activity of user.preferred_workouts">
               {{activity}}
-            </div>
+            </p>
 
             <h4>Preferred Workout Times</h4>
-            <div *ngFor="let time of user.preferred_times">
+            <p *ngFor="let time of user.preferred_times">
               {{time}}
-            </div>
+            </p>
+
+            <button class="pure-button button-margin pure-button-primary" (click)="onConnect(user.name)">Connect</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <button class="open-button" (click)="openForm()">Chat</button>
+
+  <div class="chat-popup" id="myForm">
+    <h1>Chat</h1>
+    <h2>Chat Messages</h2>
+    <div class="user">
+      <img src="https://ui-avatars.com/api/?name=John+Doe&size=75&rounded=true" alt="user1-avatar">
+      <p>Hello there! Are we still meeting at gym today?</p>
+      <span class="time-right">11:00</span>
+    </div>
+    <div class="user darker">
+      <img src="https://ui-avatars.com/api/?name=John+Doe&size=75&rounded=true" alt="user1-avatar">
+      <p>Yep, see you there!</p>
+      <span class="time-left">11:03</span>
+    </div>
+    <div class="user darker">
+      <img src="https://ui-avatars.com/api/?name=John+Doe&size=75&rounded=true" alt="user1-avatar">
+      <p>Hey, starting in a min!</p>
+      <span class="time-left">17:34</span>
+    </div>
+
+    <textarea placeholder="Type new message here.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" (click)="closeForm()">Close</button>
   </div>
 </body>
