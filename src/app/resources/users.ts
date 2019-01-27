@@ -1,0 +1,222 @@
+export var users = [
+{
+id: 1,
+name: 'Dominic Beckinsale',
+email: 'cbrookesh@redcross.org',
+gender: 'Male',
+memberships: ['YMCA', 'Snap Fitness', 'Orange Theory'],
+preferred_days: ["Sunday", "Monday", "Tuesday", "Friday", "Saturday"],
+preferred_times: ["Early morning", "Late morning", "Late night"],
+preferred_genders: ["Male", "Female", "Nonbinary"],
+preferred_workouts: ["Cardio", "HIIT", "Kickboxing", "TRX"]
+},
+{
+id: 2,
+name: 'Myrtle Hambly',
+email: 'nimbreyi@nydailynews.com',
+gender: 'Female',
+memberships: ['YMCA', 'Orange Theory'],
+preferred_days: ["Monday", "Wednesday", "Thursday", "Saturday"],
+preferred_times: ["Late morning", "Late night"],
+preferred_genders: ["Male", "Female", "Nonbinary"],
+preferred_workouts: ["Cardio", "Cycling", "HIIT", "Strength Training", "TRX"]
+},
+{
+id: 3,
+name: 'Maxine Gosland',
+email: 'dballingg@google.co.uk',
+gender: 'Female',
+memberships: ['Anytime Fitness', 'Orange Theory'],
+preferred_days: ["Sunday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
+preferred_times: ["Early morning", "Evening", "Night"],
+preferred_genders: ["Male", "Nonbinary"],
+preferred_workouts: ["Cycling", "HIIT", "Kickboxing", "Yoga", "Zumba"]
+},
+{
+id: 4,
+name: 'Bondy Clyburn',
+email: 'eircef@ihg.com',
+gender: 'Female',
+memberships: ['YMCA', 'Snap Fitness', 'Orange Theory'],
+preferred_days: ["Monday", "Wednesday", "Thursday", "Friday", "Saturday"],
+preferred_times: ["Early morning", "Night"],
+preferred_genders: ["Male", "Female", "Nonbinary"],
+preferred_workouts: ["Cycling", "HIIT", "Strength Training", "TRX", "Yoga", "Zumba"]
+},
+{
+id: 5,
+name: 'Cesare Betham',
+email: 'hkynnde@sitemeter.com',
+gender: 'Male',
+memberships: ['YMCA', 'Anytime Fitness', 'Orange Theory'],
+preferred_days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Saturday"],
+preferred_times: ["Early morning", "Late morning", "Afternoon", "Evening", "Night", "Late night"],
+preferred_genders: ["Male", "Female", "Nonbinary"],
+preferred_workouts: ["Cardio", "Cycling", "Kickboxing", "Strength Training", "TRX"]
+},
+{
+id: 6,
+name: 'Siegfried Baudinet',
+email: 'dclancyd@nsw.gov.au',
+gender: 'Male',
+memberships: ['Anytime Fitness'],
+preferred_days: ["Monday", "Tuesday", "Thursday"],
+preferred_times: ["Early morning", "Late morning", "Evening", "Night"],
+preferred_genders: ["Female", "Nonbinary"],
+preferred_workouts: ["Cardio", "Cycling", "HIIT", "Kickboxing", "Strength Training", "TRX"]
+},
+{
+id: 7,
+name: 'Kimberley Kleuer',
+email: 'fcormodec@homestead.com',
+gender: 'Female',
+memberships: ['YMCA', 'Orange Theory'],
+preferred_days: ["Sunday", "Wednesday", "Thursday", "Saturday"],
+preferred_times: ["Late morning", "Evening", "Night", "Late night"],
+preferred_genders: ["Female"],
+preferred_workouts: ["Cardio", "Cycling", "HIIT","TRX", "Yoga", "Zumba"]
+},
+{
+id: 8,
+name: 'Alayne Jarnell',
+email: 'kpomeryb@mashable.com',
+gender: 'Nonbinary',
+memberships: ['Orange Theory'],
+preferred_days: ["Sunday", "Monday", "Thursday", "Friday"],
+preferred_times: ["Early morning", "Late morning", "Afternoon", "Evening", "Night", "Late night"],
+preferred_genders: ["Male", "Female", "Nonbinary"],
+preferred_workouts: ["Cardio", "Strength Training", "TRX", "Yoga", "Zumba"]
+},
+{
+id: 9,
+name: 'Silvan Cordery',
+email: 'cmcqueenj@jimdo.com',
+gender: 'Nonbinary',
+memberships: ['Anytime Fitness', 'Orange Theory'],
+preferred_days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
+preferred_times: ["Early morning", "Afternoon", "Evening", "Night"],
+preferred_genders: ["Male", "Female", "Nonbinary"],
+preferred_workouts: ["Cardio", "HIIT", "Kickboxing", "TRX", "Yoga", "Zumba"]
+},
+{
+id: 10,
+name: 'Joell Smidmore',
+email: 'gmaragesa@guardian.co.uk',
+gender: 'Male',
+memberships: ['Orange Theory'],
+preferred_days: ["Sunday", "Monday", "Tuesday", "Friday"],
+preferred_times: ["Late morning", "Evening", "Night"],
+preferred_genders: ["Male", "Nonbinary"],
+preferred_workouts: ["HIIT", "Kickboxing", "TRX", "Yoga", "Zumba"]
+},
+{
+id: 11,
+name: 'Marietta Yve',
+email: 'afillis9@google.pl',
+gender: 'Female',
+memberships: ['YMCA', 'Snap Fitness', 'Anytime Fitness', 'Orange Theory'],
+preferred_days: ["Monday", "Wednesday", "Thursday", "Saturday"],
+preferred_times: ["Late morning", "Afternoon"],
+preferred_genders: ["Male", "Female"],
+preferred_workouts: ["Yoga", "Zumba"]
+},
+{
+id: 12,
+name: 'Jessalyn Vasilyev',
+email: 'mrudgerd8@wikipedia.org',
+gender: 'Female',
+memberships: ['YMCA', 'Anytime Fitness'],
+preferred_days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+preferred_times: ["Early morning", "Late morning", "Afternoon", "Evening", "Night", "Late night"],
+preferred_genders: ["Male", "Female", "Nonbinary"],
+preferred_workouts: ["Cardio", "Cycling", "HIIT", "Kickboxing", "Strength Training", "TRX", "Yoga", "Zumba"]
+},
+{
+id: 13,
+name: 'Yvette Doak',
+email: 'bgodsal7@gov.uk',
+gender: 'Female',
+memberships: ['YMCA', 'Snap Fitness'],
+preferred_days: ["Sunday", "Monday", "Friday"],
+preferred_times: ["Early morning", "Evening", "Night", "Late night"],
+preferred_genders: ["Male", "Female", "Nonbinary"],
+preferred_workouts: ["Cardio", "HIIT", "Strength Training", "TRX", "Yoga", "Zumba"]
+},
+{
+id: 14,
+name: 'Elly Moretto',
+email: 'bghidoni6@ask.com',
+gender: 'Female',
+memberships: ['YMCA', 'Orange Theory'],
+preferred_days: ["Tuesday", "Wednesday", "Friday", "Saturday"],
+preferred_times: ["Late morning", "Evening", "Late night"],
+preferred_genders: ["Female", "Nonbinary"],
+preferred_workouts: ["Cardio", "HIIT", "TRX", "Yoga", "Zumba"]
+},
+{
+id: 15,
+name: 'Cristy Newham',
+email: 'amccloid5@slashdot.org',
+gender: 'Female',
+memberships: ['YMCA', 'Snap Fitness', 'Orange Theory'],
+preferred_days: ["Sunday", "Tuesday", "Thursday", "Friday", "Saturday"],
+preferred_times: ["Afternoon", "Evening", "Late night"],
+preferred_genders: ["Female"],
+preferred_workouts: ["Cardio", "HIIT", "Kickboxing", "Strength Training", "TRX"]
+},
+{
+id: 16,
+name: 'Kerby Basey',
+email: 'dlazar4@qq.com',
+gender: 'Male',
+memberships: ['YMCA', 'Snap Fitness', 'Anytime Fitness', 'Orange Theory'],
+preferred_days: ["Wednesday", "Thursday", "Saturday"],
+preferred_times: ["Early morning", "Evening", "Night"],
+preferred_genders: ["Male"],
+preferred_workouts: ["Cardio", "HIIT", "Kickboxing", "TRX", "Yoga"]
+},
+{
+id: 17,
+name: 'Gage Poyzer',
+email: 'ccollinwood3@cnbc.com',
+gender: 'Male',
+memberships: ['Snap Fitness'],
+preferred_days: ["Monday", "Wednesday", "Friday", "Saturday"],
+preferred_times: ["Early morning", "Afternoon", "Night", "Late night"],
+preferred_genders: ["Male", "Female", "Nonbinary"],
+preferred_workouts: ["Kickboxing", "Strength Training"]
+},
+{
+id: 18,
+name: 'Nikita Filppetti',
+email: 'scoke2@canalblog.com',
+gender: 'Nonbinary',
+memberships: ['YMCA'],
+preferred_days: ["Sunday", "Tuesday", "Thursday"],
+preferred_times: ["Afternoon", "Evening"],
+preferred_genders: ["Male", "Female", "Nonbinary"],
+preferred_workouts: ["Cycling", "HIIT", "Strength Training", "Yoga", "Zumba"]
+},
+{
+id: 19,
+name: 'Sallyanne Tench',
+email: 'dgyurko1@technorati.com',
+gender: 'Female',
+memberships: ['YMCA', 'Orange Theory'],
+preferred_days: ["Sunday", "Friday", "Saturday"],
+preferred_times: ["Early morning", "Night", "Late night"],
+preferred_genders: ["Male", "Female"],
+preferred_workouts: ["Cardio", "Strength Training", "TRX", "Zumba"]
+},
+{
+id: 20,
+name: 'Tim Krollman',
+email: 'vapple0@fda.gov',
+gender: 'Male',
+memberships: ['YMCA', 'Snap Fitness'],
+preferred_days: ["Sunday", "Monday", "Tuesday", "Saturday"],
+preferred_times: ["Evening", "Night", "Late night"],
+preferred_genders: ["Male", "Nonbinary"],
+preferred_workouts: ["Cardio", "Cycling", "Strength Training", "TRX"]
+}
+];
